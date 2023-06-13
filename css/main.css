@@ -1,0 +1,211 @@
+.main .main-bnr {}
+.main .main-bnr img {
+  width: 100%;
+}
+.main-notice {
+  position: relative;
+  height: 42px;
+  background-color: #7B6ACF;
+}
+.main-notice .swiper-container {
+  height: 42px;
+  flex-grow: 1;
+}
+.main-notice .swiper-container .swiper-slide {
+  height: 42px;
+  display: flex;
+  align-items: center;
+  padding-left: 34px;
+}
+.main-notice .swiper-container .swiper-slide a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  display: block;
+  width: 73%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.main-notice::before {
+  content: '';
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  width: 24px;
+  height: 24px;
+  background: url(../img/ico-main-notice24.png)no-repeat center/100% auto;
+  vertical-align: middle;
+  transform: translateY(-50%);
+}
+.main-notice .inner {
+  display: flex;
+  align-items: center;
+}
+.main-notice .notice-line__more {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  color: var(--white);
+  font-size: 12px;
+}
+.main-notice .notice-line__more span {
+  margin-right: 6px;
+}
+.main-notice .notice-line__more img {
+  width: 20px;
+  height: 20px;
+}
+
+.main-list {
+  padding-bottom: 56px;
+}
+.main-list .inner {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.main-list .main-list-wrap {}
+.main-list .main-list-wrap .list-box {
+  display: flex;
+  gap: 16px;
+  padding: 12px;
+  border: 1px solid #DED8FE;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px rgba(207, 202, 234, 0.25);
+}
+.main-list .main-list-wrap .list-box:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+.main-list .main-list-wrap .list-box img {
+  width: 74px;
+  height: 110px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
+  flex-shrink: 0;
+}
+.main-list .main-list-wrap .list-box a {
+  padding-top: 8px;
+  display: block;
+}
+.main-list .main-list-wrap .list-box a h2 {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--primary);
+  margin-bottom: 6px;
+}
+.main-list .main-list-wrap .list-box a .list-date {
+  font-size: 12px;
+  color: #A8A5B4;
+}
+.list-box a .list-items {
+  font-size: 12px;
+  margin-top: 6px;
+  padding-bottom: 17px;
+}
+.list-box a::after {
+  content: '';
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid var(--tertiary);
+}
+.list-box a .list-items .list-item-busk {
+  font-size: inherit;
+  position: relative;
+  padding-right: 8px;
+}
+.list-box a .list-items .list-item-busk::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 1px;
+  height: 10px;
+  background-color: var(--black);
+  transform: translateY(-50%);
+}
+.list-box a .list-items .list-item-location {
+  padding-left: 8px;
+  font-size: inherit;
+}
+
+.list-box .state-tag {
+  margin-top: 8px;
+  display: flex;
+  flex-shrink: 0;
+  gap: 4px;
+}
+.list-box .state-tag span {
+  background-color: #EAEFFF;
+  color: #218FF1;
+  display: block;
+  font-size: 12px;
+  padding: 1px 4px;
+}
+
+.list-main-condition {
+  border-bottom: 1px solid #EBEFF8;
+}
+.list-main-condition .inner {}
+.cod-top {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+}
+.cod-top span {
+  margin-right: 32px;
+  font-size: inherit;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+.cod-top input[name="codChk"] {
+  display: none;
+}
+.cod-top input[name="codChk"] + label {
+  margin-right: 8px;
+  color: #A8A5B4;
+  font-size: inherit;
+  width: 84px;
+  height: 28px;
+  display: inline-block;
+  text-align: center;
+  line-height: 28px;
+}
+.cod-top input[name="codChk"]:checked + label {
+  position: relative;
+  background-color: #EAE7FF;
+  padding-right: 10px;
+  box-sizing: border-box;
+  border-radius: 3rem;
+  color: var(--primary);
+  font-weight: bold;
+}
+.cod-top input[name="codChk"]:checked + label::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 16px;
+  height: 16px;
+  background: url(../img/check-on.png)no-repeat center/16px auto;
+  transform: translateY(-50%);
+}
+.cod-top input[type="text"] {
+  height: 32px;
+  background-color: #EAE7FF;
+  border: 0;
+}
+.cod-top .input::-webkit-input-placeholder { color: var(--primary); font-size: 12px; letter-spacing: -0.5px;}
+.cod-top .input:-ms-input-placeholder { color: var(--primary); font-size: 12px; letter-spacing: -0.5px;}
+.cod-top .input::-moz-placeholder { color: var(--primary); font-size: 12px; letter-spacing: -0.5px;}
+.bsk-intro {
+  margin-bottom: 8px;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #868686;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* 텍스트를 자를 때 원하는 단위 ex) 3줄 */
+  -webkit-box-orient: vertical;
+  overflow: hidden; 
+}

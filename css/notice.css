@@ -1,0 +1,119 @@
+html, body {
+  height: 100%;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+body {
+  background-color: var(--tertiary);
+  max-width: 550px;
+  margin: 0 auto;
+}
+.container {
+  background-color: var(--tertiary);
+}
+header {
+  height: 180px;
+  background-color: var(--secondary);
+}
+.inner {
+  position: relative;
+  padding: 0 16px;
+}
+header .header-inner {
+  height: 56px;
+}
+header .header-title {
+  color: #fff;
+}
+header .return-btn {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background: url(../img/ico-return-w.png)no-repeat center/24px auto;
+}
+
+header .flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 123px;
+  padding-bottom: 32px;
+  box-sizing: border-box;
+}
+header .flex .header-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+header .flex .disc {
+  font-size: 14px;
+  color: #F2F2F2;
+}
+
+.main-notice ul {}
+.main-notice .notice-list {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #fff;
+}
+.main-notice .notice-list .nt-left {
+  width: 84%;
+}
+.main-notice .notice-list .nt-left h2 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2;
+  color: var(--black);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.main-notice .notice-list .nt-left span {
+  font-size: 13px;
+  color: var(--gray400);
+}
+.main-notice .notice-list a {}
+.main-notice .notice-list a img {
+  width: 16px;
+  height: 16px;
+}
+
+/* SETTING */
+.toggle-div {}
+.toggle-div input[id="toggle"] {
+  display: none;
+}
+.toggle-div input[id="toggle"] + label {
+  position: relative;
+  display: block;
+  width: 42px;
+  height: 20px;
+  background-color: var(--gray300);
+  border-radius: 3rem;
+  transition: all .5s;
+}
+.toggle-div input[id="toggle"] + label::after {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  background-color: var(--white);
+  border-radius: 50%;
+  transition: .5s;
+}
+.toggle-div input[id="toggle"]:checked + label {
+  background-color: var(--primary);
+}
+.toggle-div input[id="toggle"]:checked + label::after {
+  right: 1px;
+  left: auto;
+}

@@ -1,0 +1,227 @@
+.main-login {
+  margin-top: 8vh;
+}
+.login-inner {
+  max-width: 474px;
+  box-sizing: border-box;
+}
+.login-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+main .login-form {}
+main .login-form form {}
+.login-form input {}
+.login-form input[type="text"] {
+  margin-bottom: 12px;
+}
+.login-form input[type="password"] {
+  margin-bottom: 30px;
+}
+
+.user-search {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.user-search a {
+  position: relative;
+  padding: 0 10px;
+  color: var(--gray700);
+  font-size: 14px;
+}
+.user-search a:first-child::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 1px;
+  height: 10px;
+  background-color: var(--gray400);
+  transform: translateY(-50%);
+}
+
+
+
+.tabs .user-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100% - 128px);
+}
+.tabs .h-100 {
+  height: 100%;
+}
+.tabs .tab-content-top {}
+.tabs .tab-content-top h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--black);
+  margin-bottom: 12px;
+}
+.tab-content-top .top-disc {
+  font-size: 14px;
+  color: #686868;
+  display: block;
+  margin-bottom: 16px;
+}
+.tab-content-top .tab-box {
+  border: 1px solid var(--tertiary);
+  background-color: var(--quaternary);
+  border-radius: 4px;
+  padding: 42px 24px 24px;
+}
+.tab-content-top .tab-box img {
+  width: 88px;
+  display: block;
+  margin: 0 auto 36px;
+}
+.tab-content-top .tab-box .tab-box-disc {
+  font-size: 12px;
+  font-weight: normal;
+  color: #218FF1;
+  text-align: center;
+  line-height: 1.5;
+  display: inherit;
+}
+/* .tab-content-top .input-box {
+  padding: 16px;
+} */
+.tab-content-top .input-box label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+/* USER SIGINUP TERMS */
+.main-signup .inner {
+  margin-top: 32px;
+  letter-spacing: -0.4px;
+  height: calc(100% - 40px);
+}
+.main-signup .main-signup-top {
+  margin-bottom: 42px;
+}
+.main-signup .main-signup-top h2 {
+  font-size: 24px;
+  line-height: 1.4;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.main-signup .main-signup-top strong {
+  font-weight: bold;
+}
+.main-signup .main-signup-top .top-disc {
+  font-size: 14px;
+  color: #686868;
+}
+.main-signup .main-signup-btm {
+  height: calc(100% - 205px);
+}
+.main-signup .main-signup-btm form {}
+.main-signup-btm .chk-all {
+  margin-bottom: 30px;
+}
+.main-signup-btm form .flex {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+.chk-all input[id="signChkAll"] + label span {
+  font-size: 16px;
+  font-weight: 500;
+}
+.main-signup-btm .input-box {
+  padding: 24px;
+  margin-bottom: 32px;
+}
+.input-box .sign-div {}
+.input-box .sign-div:first-child {
+  margin-bottom: 32px;
+}
+.main-signup .main-signup-btm input[name="signChk"] {
+  display: none;
+}
+input[name="signChk"] + label {}
+input[name="signChk"] + label::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url(../img/ico-check-off.png)no-repeat center/24px auto;
+  vertical-align: middle;
+}
+input[name="signChk"]:checked + label::before {
+  background: url(../img/ico-check-on.png)no-repeat center/24px auto;
+  transition: all .3s;
+}
+input[id*="signChk"] + label span {
+  font-size: 14px;
+  font-weight: bold;
+}
+.input-box .sign-div .terms-link {
+  margin-top: 20px;
+}
+.input-box .sign-div .terms-link a {
+  position: relative;
+  font-size: 14px;
+  display: block;
+  color: #686868;
+}
+.input-box .sign-div .terms-link a:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+.input-box .sign-div .terms-link a::after {
+  content: '';
+  position: absolute;
+  right: -6px;
+  width: 16px;
+  height: 16px;
+  background: url(../img/ico-arrow-right-sm.png)no-repeat center/16px auto;
+}
+
+.main-signup-btm form .flex .btn {
+  flex: 1 0 auto;
+  margin-bottom: 30px;
+}
+
+/* USER INFO */
+.main-signup-btm .input-box.info-box {
+  padding: 20px;
+} 
+.input-section {}
+.input-section:not(:last-child) {
+  margin-bottom: 20px;
+}
+.input-section label {
+  margin-bottom: 10px;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+}
+.input-section label + input {}
+.input-section .disc {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  font-weight: 300;
+  color: #218FF1;
+}
+
+/* COMPLETE */
+.complete-img {
+  width: 92px;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  padding-top: 16vh;
+}
+.comp-btn {
+  display: block;
+  line-height: 48px;
+}

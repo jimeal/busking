@@ -1,0 +1,62 @@
+.container {
+  margin: auto;
+  height: 100%;
+  box-sizing: border-box;
+  background: url(../img/bg.png)no-repeat center/ 100% auto;
+  background-size: cover;
+}
+.intro {
+  width: 100%;
+}
+
+.container .inner {
+  max-width: 600px;
+  padding: 0 30px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.intro-title {
+  padding: 60px 0 0;
+  box-sizing: border-box;
+}
+.intro-title h1 {
+  font-size: 24px;
+  font-weight: 300;
+  color: var(--white);
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+}
+.intro-title h1 strong {
+  font-weight: 700;
+}
+.login-wrap .disc {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: var(--white);
+}
+.login-btns {
+  display: flex;
+  gap: 10px;
+  flex-grow: 0;
+  font-weight: 400;
+}
+.login-btns a.btn {
+  display: block;
+  line-height: 40px;
+  height: 40px;
+  width: 50%;
+  font-weight: 500;
+}
+
+.addm-btn {
+  margin-top: 132px;
+}
+.addm-btn .btn {
+  display: block;
+  line-height: 48px;
+}
+
